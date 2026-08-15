@@ -20,3 +20,26 @@ body {
 .font-display {
   font-family: var(--font-display);
 }
+
+
+@keyframes whatsapp-pulse {
+    0% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45);
+    }
+    70% {
+          box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+    }
+    100% {
+          box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-float-btn {
+    animation: whatsapp-pulse 2.8s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .whatsapp-float-btn {
+          animation: none;
+    }
+}
