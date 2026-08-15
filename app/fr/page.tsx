@@ -21,7 +21,7 @@ function Header() {
           h(
                   "div",
             { className: "mx-auto flex max-w-7xl items-center justify-between px-6 py-4" },
-                  h(Link, { href: "/fr", className: "font-display text-2xl tracking-wide" }, "RITAMIRA"),
+                  h(Link, { href: "/fr", className: "flex items-center" }, h("img", { src: "/logo.png", alt: "RITAMIRA", className: "h-14 w-auto rounded" })),
                   h(
                             "nav",
                     { className: "hidden gap-8 text-sm uppercase tracking-wider md:flex" },
