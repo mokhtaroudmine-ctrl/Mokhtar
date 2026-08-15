@@ -1,3 +1,25 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Premium online shop",
+    description:
+          "PLACEHOLDER TO REPLACE: SEO description of the RITAMIRA shop in English.",
+    alternates: {
+          canonical: "/en",
+          languages: {
+                  fr: "/fr",
+                  en: "/en",
+          },
+    },
+    openGraph: {
+          title: "RITAMIRA",
+          description:
+                  "PLACEHOLDER TO REPLACE: SEO description of the RITAMIRA shop in English.",
+          url: "/en",
+          locale: "en_US",
+    },
+};
+
 import Link from "next/link";
 import { createElement as h } from "react";
 
