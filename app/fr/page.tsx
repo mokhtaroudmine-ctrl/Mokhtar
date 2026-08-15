@@ -1,3 +1,25 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Boutique en ligne premium",
+    description:
+          "PLACEHOLDER A REMPLACER : description SEO de la boutique RITAMIRA en francais.",
+    alternates: {
+          canonical: "/fr",
+          languages: {
+                  fr: "/fr",
+                  en: "/en",
+          },
+    },
+    openGraph: {
+          title: "RITAMIRA",
+          description:
+                  "PLACEHOLDER A REMPLACER : description SEO de la boutique RITAMIRA en francais.",
+          url: "/fr",
+          locale: "fr_FR",
+    },
+};
+
 import Link from "next/link";
 import { createElement as h } from "react";
 
